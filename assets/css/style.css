@@ -15,7 +15,7 @@ body {
   /* 어두운 그라디언트 + 배경 이미지 */
   background:
     linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35)),
-    url('../img/bg.jpg') no-repeat center center fixed;
+    url('../img/data-wave.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
