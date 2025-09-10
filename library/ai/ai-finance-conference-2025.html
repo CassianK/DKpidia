@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../../assets/css/style.css"/
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <a href="../../index.html">← DKpidia</a>
+
+  <h1>AI와 금융투자업의 혁신: 자본시장연구원 패널토론 요약</h1>
+  <div class="meta">AI · 2025-09-10 · DK</div>
+  
+  <article class="markdown-body"><h1 class="atx" id="금융-ai의-현재와-미래-전문가-토론을-통해-본-한국-금융업계의-ai-혁신-로드맵">금융 AI의 현재와 미래: 전문가 토론을 통해 본 한국 금융업계의 AI 혁신 로드맵</h1>
+<h2 class="atx" id="들어가며">들어가며</h2>
+<p>인공지능이 금융업계를 빠르게 변화시키고 있는 가운데, 오늘 오전 개최된 자본시장연구원 개원 28주년 컨퍼런스에서는 학계와 실무진이 한자리에 모여 금융 AI의 현재 위치와 미래 방향성을 심도 있게 논의했습니다. 이번 토론회는 유니스트 이용재 교수, KB자산운용 김홍곤 전무, 태재대학교 정삼영 교수, 미래에셋증권 진정혁 이사, 그리고 싱가포르 아시프마(ASIFMA) 리시 카푸르 이사가 참여하여 각각의 전문 영역에서 바라본 금융 AI의 현주소를 공유했습니다.</p>
+<p>이들의 발표를 통해 우리는 금융 AI가 단순한 자동화 도구를 넘어서 의사결정의 핵심 파트너로 진화하고 있음을 확인할 수 있었습니다. 특히 대규모 언어모델(LLM)과 AI 에이전트의 등장은 금융업계의 업무 방식을 근본적으로 바꾸고 있으며, 이에 따른 새로운 기회와 도전이 동시에 제기되고 있습니다.</p>
+<h2 class="atx" id="1-llm의-숨겨진-편향-ai도-투자-철학을-가지고-있다-이용재-교수-유니스트">1. LLM의 숨겨진 편향: AI도 투자 철학을 가지고 있다 (이용재 교수, 유니스트)</h2>
+<h3 class="atx" id="ai의-투자-성향-연구의-필요성">AI의 투자 성향 연구의 필요성</h3>
+<p>유니스트 산업공학과 이용재 교수는 "AI, Not Your Theory"라는 제목의 연구를 통해 놀라운 사실을 밝혀냈습니다. 우리가 중립적이라고 생각했던 AI 모델들이 실제로는 각각 고유한 투자 선호도를 가지고 있다는 것입니다.</p>
+<p><strong>개념박스: 대규모 언어모델(LLM)의 편향</strong></p>
+<blockquote>
+<p>대규모 언어모델은 수많은 텍스트 데이터로 학습되면서 그 데이터에 내재된 편향을 학습하게 됩니다. 이는 마치 경험이 풍부한 전문가가 자신만의 견해를 갖게 되는 것과 유사합니다. 문제는 이러한 편향이 사용자의 의도와 다를 수 있다는 점입니다.</p>
+</blockquote>
+<p>이용재 교수의 연구는 기존 자연어 처리 모델과 LLM의 근본적 차이점을 지적합니다. 과거에는 긍정적이고 부정적인 단어를 직접 지정했다면, 현재의 LLM은 방대한 데이터를 통해 학습하면서 일종의 전문가적 견해를 형성하게 됩니다.</p>
+<h3 class="atx" id="실험-방법론과-핵심-발견">실험 방법론과 핵심 발견</h3>
+<p>연구팀은 Knowledge Completion이라는 기법을 활용하여 LLM의 진짜 생각을 알아내고자 했습니다. 이는 서로 상충하는 정보를 동시에 제공했을 때 LLM이 어떤 방향으로 답변하는지를 관찰하는 방법입니다.</p>
+<p><strong>개념박스: Knowledge Completion</strong></p>
+<blockquote>
+<p>이는 AI 모델에게 상반된 정보를 동시에 제공했을 때, 모델이 내부적으로 선호하는 방향으로 답변하는 경향을 이용한 연구 기법입니다. 예를 들어, "A 주식은 상승할 것이다"와 "A 주식은 하락할 것이다"라는 상반된 정보를 동시에 제공했을 때, 모델이 어느 쪽에 더 무게를 두는지를 분석합니다.</p>
+</blockquote>
+<p>연구는 세 가지 주요 영역에서 진행되었습니다:</p>
+<p><strong>산업 섹터 선호도</strong>: 각 LLM이 어떤 산업 분야를 선호하는지 분석했습니다. 흥미롭게도 GPT와 Gemini 같은 "다듬어진" 모델들은 상대적으로 균형 잡힌 선호도를 보인 반면, LLaMA나 DeepSeek 같은 오픈소스 모델들은 특정 섹터에 대해 강한 선호를 나타냈습니다.</p>
+<p><strong>기업 규모 선호도</strong>: 대부분의 모델이 대형주를 선호하는 경향을 보였는데, 이는 대형주에 대한 뉴스와 정보가 더 많기 때문으로 분석됩니다.</p>
+<p><strong>모멘텀 vs 컨트레리언</strong>: 대부분의 모델이 컨트레리언 방식을 선호했습니다. 즉, 가격이 오르고 있을 때 하락을 예측하는 경향을 보였습니다. 특히 중국의 Qwen 모델은 매우 강한 컨트레리언 성향을 나타낸 반면, Gemini는 상대적으로 중립적이었습니다.</p>
+<h3 class="atx" id="모델-간-차이점과-시사점">모델 간 차이점과 시사점</h3>
+<p>연구 결과는 매우 흥미로운 패턴을 보여줍니다. 오픈소스 모델들은 강한 선호도를 가지고 있으면서도 의견을 잘 바꾸지 않는 "고집 센" 특성을 보였습니다. 반면 상업적으로 다듬어진 모델들은 사용자의 의견에 더 잘 동조하는 경향을 나타냈습니다.</p>
+<p>이는 실무에서 중요한 의미를 가집니다. 예를 들어, 한 자산운용회사가 소형주 중심의 모멘텀 전략을 추구한다면, 이와 반대되는 선호도를 가진 LLM을 사용할 경우 원하지 않는 결과를 얻을 수 있습니다.</p>
+<h3 class="atx" id="지속적-모니터링의-중요성">지속적 모니터링의 중요성</h3>
+<p>이용재 교수는 AI 활용에서 개발자뿐만 아니라 이러한 특성들을 지속적으로 모니터링하고 관리할 수 있는 석박사급 연구 인력의 중요성을 강조했습니다. AI 모델의 특성은 계속 변화하고 있으며, 새로운 모델이 출시될 때마다 다른 특성을 보일 수 있기 때문입니다.</p>
+<h2 class="atx" id="2-30년-펀드매니저의-ai-여정-이론에서-실전까지-김홍곤-전무-kb자산운용">2. 30년 펀드매니저의 AI 여정: 이론에서 실전까지 (김홍곤 전무, KB자산운용)</h2>
+<h3 class="atx" id="전통적-투자-기법에서-ai로의-진화">전통적 투자 기법에서 AI로의 진화</h3>
+<p>KB자산운용의 김홍곤 전무는 30년간의 펀드 매니저 경험을 바탕으로 AI 기술의 실무 적용 과정을 생생하게 전했습니다. 그의 발표는 금융업계가 어떻게 통계적 방법론에서 머신러닝, 딥러닝, 그리고 최종적으로 LLM 기반 멀티 에이전트 시스템까지 진화해왔는지를 보여주는 살아있는 역사서와 같았습니다.</p>
+<p><strong>개념박스: 펀드 매니저의 핵심 지표들</strong></p>
+<blockquote>
+<ul>
+<li><strong>Sharpe Ratio</strong>: 위험 대비 수익률을 측정하는 지표</li>
+<li><strong>Information Ratio</strong>: 벤치마크 대비 초과 수익률의 안정성을 측정</li>
+<li><strong>Information Coefficient</strong>: 예측 모델의 정확도를 나타내는 상관계수
+이들 지표는 펀드 매니저가 지속적이고 안정적인 초과 성과(Alpha)를 달성하는 데 핵심적인 역할을 합니다.</li>
+</ul>
+</blockquote>
+<h3 class="atx" id="투자에서의-seo-selection-allocation-optimization">투자에서의 SEO: Selection, Allocation, Optimization</h3>
+<p>김홍곤 전무는 투자의 핵심을 세 가지 요소로 정의했습니다. 첫째는 Selection(선택)으로, 어떤 투자 기준을 선택할 것인가의 문제입니다. PER, PBR, EV/EBITDA, 매출액 증가율 등 다양한 지표 중에서 무엇을 택할 것인가를 의미합니다.</p>
+<p>둘째는 Allocation(배분)으로, 선택된 투자 기준들에 대한 가중치를 어떻게 정할 것인가의 문제입니다. 과거에는 단순한 평균이나 통계적 방법을 사용했지만, 현재는 AI 알고리즘을 통해 동적으로 조정됩니다.</p>
+<p>셋째는 Optimization(최적화)로, 포트폴리오의 전체적인 균형을 맞추는 과정입니다.</p>
+<h3 class="atx" id="롱텀-메모리-소실-주기의-발견">롱텀 메모리 소실 주기의 발견</h3>
+<p>김 전무의 가장 혁신적인 발견 중 하나는 각 종목별로 서로 다른 "롱텀 메모리 소실 주기"가 있다는 것입니다. 예를 들어, 매출액 컨센서스는 23,200바이트에서, 삼성전자는 32,000바이트에서 과거 정보의 기억력이 소실된다는 것입니다.</p>
+<p><strong>개념박스: 롱텀 메모리 소실 주기</strong></p>
+<blockquote>
+<p>시계열 데이터에서 과거 정보가 현재 예측에 미치는 영향력이 사라지는 시점을 의미합니다. 마치 사람이 시간이 지나면서 과거 기억을 잊는 것처럼, 데이터도 일정 시점이 지나면 예측력을 잃게 됩니다. 이 주기를 정확히 파악하면 더 효과적인 예측 모델을 구축할 수 있습니다.</p>
+</blockquote>
+<p>이러한 발견을 통해 전 세계 주식, 국가별 자산, 원자재까지도 포함하는 글로벌 자산운용 시스템을 구축할 수 있었습니다.</p>
+<h3 class="atx" id="딥러닝과-유전자-알고리즘의-활용">딥러닝과 유전자 알고리즘의 활용</h3>
+<p>김 전무는 딥러닝 기법 중에서도 특히 유전자 알고리즘(Genetic Algorithm)을 활용한 경험을 공유했습니다. 이 방법은 양성인자(positive alpha를 생성하는 요소)와 음성인자를 구별하여, 마치 생물학적 진화처럼 더 나은 투자 요소들을 선별하고 조합하는 방식입니다.</p>
+<p>또한 합성곱 신경망(CNN)을 이용해 30년간의 캔들 차트를 3차원 이미지로 변환하여 패턴을 분석하고, RNN 계열의 순환 신경망으로 시계열 분포를 계산하는 방법도 도입했습니다.</p>
+<p>⸻
+&lt;개념 설명: CNN과 RNN을 활용한 투자 전략&gt;</p>
+<p>최근 금융 데이터 분석에서는 딥러닝 모델을 적극적으로 활용하고 있습니다. 그중에서도 **CNN(합성곱 신경망)**과 **RNN(순환 신경망)**을 결합하는 방식은 특히 주목할 만합니다.</p>
+<h4 class="atx" id="첫째-cnn의-역할">첫째, CNN의 역할</h4>
+<p>CNN은 원래 이미지 인식에 뛰어난 신경망입니다. 그런데 이를 주가 차트 분석에도 적용할 수 있습니다. 예를 들어 30년간의 캔들 차트를 3차원 이미지로 변환하면, CNN은 차트에서 나타나는 **특정 패턴(머리어깨형, 쌍바닥, 상승 깃발 등)*<em>을 자동으로 찾아내고 학습할 수 있습니다. 즉, 차트의 모양을 *</em>“패턴의 눈”**으로 읽어내어 상승·하락 신호를 정량화하는 것이죠.</p>
+<h4 class="atx" id="둘째-rnn의-역할">둘째, RNN의 역할</h4>
+<p>반면 RNN은 시간 순서가 중요한 데이터를 잘 다루는 모델입니다. 주가 역시 과거 흐름이 미래에 영향을 주는 시계열 데이터이므로, RNN(LSTM, GRU 같은 변형 포함)은 일정 기간 후의 수익률 분포나 변동성 흐름을 예측하는 데 강점을 가집니다. 쉽게 말해, RNN은 **“시간의 귀”**가 되어 시장의 리듬을 듣고 미래의 움직임을 추정합니다.</p>
+<h4 class="atx" id="셋째-cnn과-rnn의-결합">셋째, CNN과 RNN의 결합</h4>
+<p>이 두 모델을 함께 쓰면 훨씬 강력한 전략이 나옵니다. CNN이 “상승 패턴”을 감지했더라도, RNN이 단기적으로 하락 가능성을 강하게 예측한다면 진입을 보류할 수 있습니다. 반대로 두 신호가 동시에 상승을 가리킨다면 강력한 매수 신호가 되는 것이죠. 이렇게 신호를 교차 검증하면 노이즈가 줄고, **샤프비율(위험 대비 수익률)**을 높이는 데 도움이 됩니다. 실제 헤지펀드들은 이런 방식으로 알파(초과수익)를 추구합니다.</p>
+<h4 class="atx" id="개인-투자자에게-적용하기">개인 투자자에게 적용하기</h4>
+<p>물론 개인이 CNN·RNN 모델을 직접 구축하기는 쉽지 않습니다. 하지만 단순화된 방법을 활용할 수 있습니다. 예를 들어 CNN 대신 패턴 인식 툴을, RNN 대신 이동평균·변동성 지표를 쓰는 것이죠.
+•    패턴 분석에서 상승 확률이 높게 나오면 진입 후보로 삼고,
+•    이동평균선 방향이 일치할 때만 최종 매매하며,
+•    변동성 지표(ATR 등)로 포지션 크기를 조절하는 방식입니다.</p>
+<h4 class="atx" id="기대-효과와-리스크">기대 효과와 리스크</h4>
+<p>이 접근법의 장점은 사람이 감에 의존해 차트를 해석하지 않고, 데이터 기반으로 신호를 만들 수 있다는 점입니다. 현실적으로는 연 1015% 이상의 안정적인 수익률을 목표로 할 수 있으며, 샤프비율 1.52.0 정도를 기대할 수 있습니다. 다만 오버피팅(과적합) 위험이나, 전쟁·팬데믹 같은 구조적 변동에는 여전히 취약합니다.</p>
+<p>⸻</p>
+<p>👉 요약하면, CNN은 차트 패턴을 읽는 눈, RNN은 시간의 흐름을 듣는 귀입니다. 두 모델을 결합하면 투자자는 과거의 패턴과 시간적 흐름을 동시에 반영하여 보다 정교한 전략을 세울 수 있습니다. 개인 투자자라면 이 구조를 단순화하여, “패턴 + 추세 확인” 전략으로도 충분히 활용 가능합니다.</p>
+<p>⸻</p>
+<h3 class="atx" id="andlt개념설명-샤프비율과-백테스트-전략의-성과를-검증하는-방법andgt">&lt;개념설명: 샤프비율과 백테스트: 전략의 성과를 검증하는 방법&gt;</h3>
+<p>아무리 정교한 투자 전략이라 해도, 실제 성과를 검증하지 않으면 의미가 없습니다. 이때 가장 널리 쓰이는 지표가 바로 **샤프비율(Sharpe Ratio)**입니다.</p>
+<h4 class="atx" id="샤프비율이란">샤프비율이란?</h4>
+<p>샤프비율은 투자 전략이 위험을 감수한 만큼 얼마만큼 초과수익(알파)을 냈는지를 보여줍니다. 계산식은 다음과 같습니다.</p>
+<p>\text{Sharpe Ratio} = \frac{R_p - R_f}{\sigma_p}
+    •    R_p: 전략의 평균 수익률
+    •    R_f: 무위험 수익률(예: 국채 금리)
+    •    \sigma_p: 전략 수익률의 표준편차(즉, 변동성)</p>
+<p>일반적으로 샤프비율이 1 이상이면 양호, 2 이상이면 우수, 3 이상이면 탁월한 전략으로 평가됩니다.</p>
+<h4 class="atx" id="백테스트의-절차">백테스트의 절차</h4>
+<p>전략의 샤프비율을 확인하려면 백테스트가 필요합니다. 백테스트란 과거 데이터를 가지고 전략을 실행해 보며, 실제로 어떤 성과가 나왔을지 시뮬레이션하는 과정입니다. 절차는 다음과 같습니다.
+    1.    데이터 준비: 30년간의 주가, 거래량, 금리 등을 확보
+    2.    전략 적용: CNN이 패턴 신호를 내고, RNN이 시계열 흐름을 예측하는 방식으로 가상 매매 진행
+    3.    성과 측정: 매매 결과로 나온 포트폴리오 수익률을 기록
+    4.    리스크 반영: 변동성과 손실 구간을 함께 계산
+    5.    샤프비율 계산: 최종적으로 전략의 위험 대비 수익을 수치화</p>
+<h4 class="atx" id="예시로-보는-전략-성과">예시로 보는 전략 성과</h4>
+<p>가령, CNN+RNN 결합 전략을 1995~2025년 데이터에 백테스트했다고 가정해 봅시다.
+    •    연평균 수익률: 12%
+    •    무위험 수익률(미국 국채): 2%
+    •    변동성(표준편차): 7%</p>
+<p>이 경우 샤프비율은 다음과 같습니다.</p>
+<p>\frac{12 - 2}{7} = 1.43</p>
+<p>즉, 이 전략은 위험 대비 꽤 안정적으로 초과수익을 냈다고 평가할 수 있습니다.</p>
+<h4 class="atx" id="개인-투자자-관점">개인 투자자 관점</h4>
+<p>개인 투자자라면 굳이 CNN·RNN을 직접 구현하지 않더라도, 패턴 인식 툴과 단순 지표(이동평균, ATR 등)로 비슷한 방식의 백테스트를 실행할 수 있습니다. 이렇게 하면 자신의 전략이 “실제 돈을 걸었을 때도 의미가 있는지” 사전에 점검할 수 있죠.</p>
+<p>⸻</p>
+<p>👉 정리하면, 샤프비율은 전략의 성적표, 백테스트는 모의고사입니다. 두 과정을 거쳐야만 CNN과 RNN을 활용한 복잡한 전략이든, 개인이 만든 단순화 전략이든 **“데이터에 의해 검증된 투자 전략”**으로 발전할 수 있습니다.</p>
+<p>⸻</p>
+<h3 class="atx" id="트랜스포머와-멀티-에이전트-시스템">트랜스포머와 멀티 에이전트 시스템</h3>
+<p>최근에는 트랜스포머의 Attention Mechanism을 활용하여 모든 시점의 정보를 동시에 병렬 처리하면서 가장 중요한 시점의 데이터를 찾아내는 시스템을 구축했습니다. 더 나아가 LLM을 기반으로 한 멀티 에이전트 시스템을 도입하여 기본적 분석, 기술적 분석, 펀더멘털 분석, 투자자 행태 분석 등을 각각의 전문 에이전트가 담당하도록 했습니다.</p>
+<h3 class="atx" id="융합형-인재의-중요성">융합형 인재의 중요성</h3>
+<p>김 전무는 AI 발전의 가장 큰 걸림돌로 융합형 인재 부족을 지적했습니다. "개발자는 PER이 1.5라는 것이 무엇을 의미하는지 이해하지 못하고, 펀드매니저는 아무리 설명해도 개발자에게 정확한 요구사항을 전달하기 어렵다"는 것입니다. 따라서 도메인 지식을 가진 사람이 직접 코딩을 할 수 있는 융합형 인재가 필요하다고 강조했습니다.</p>
+<h2 class="atx" id="3-금융업계의-ai-도입-현실과-전망-정삼영-교수-태재대학교">3. 금융업계의 AI 도입 현실과 전망 (정삼영 교수, 태재대학교)</h2>
+<h3 class="atx" id="andquot졸지-말자-속지-말자andquot의-철학">"졸지 말자, 속지 말자"의 철학</h3>
+<p>태재대학교 정삼영 교수는 현재 금융업계가 처한 상황을 매우 현실적으로 진단했습니다. 많은 기업들이 AI에 대해 겁을 먹고 있으면서도 동시에 무엇을 해야 할지 모르는 상황이라는 것입니다. 그는 한 경영진의 "졸지 말자, 속지 말자"라는 구호를 인용하며, 현재 금융권이 가져야 할 자세를 제시했습니다.</p>
+<h3 class="atx" id="제조업적-사고에서-벗어나기">제조업적 사고에서 벗어나기</h3>
+<p>정 교수는 과거 10년 전만 해도 AI 교육이 "냉장고, 세탁기, TV를 직접 만들어야 한다"는 사고방식으로 진행되었다고 회상했습니다. 즉, 모든 것을 처음부터 개발해야 한다는 제조업적 사고였습니다. 하지만 현재는 "어떤 크기의 냉장고가 필요한지, 어떤 기능이 필요한지"를 파악하는 것이 더 중요해졌습니다.</p>
+<p><strong>개념박스: CAIO (Chief AI Officer)</strong></p>
+<blockquote>
+<p>기존의 CIO(Chief Information Officer)를 대체하거나 보완하는 새로운 임원급 직책입니다. AI 전략을 총괄하고, 조직 전체의 AI 도입과 활용을 책임지는 역할을 합니다. 단순한 기술 도입이 아니라 비즈니스 전략과 AI를 연결하는 가교 역할을 담당합니다.</p>
+</blockquote>
+<h3 class="atx" id="사모펀드-업계의-ai-혁신-사례">사모펀드 업계의 AI 혁신 사례</h3>
+<p>정 교수는 KKR이 아마존 출신 CEO 아담 셀리스키를 CAIO로 영입한 사례와 블랙록이 프리핀(Preqin)을 5천억 원에 인수한 사례를 들며, 글로벌 사모펀드 업계의 AI 투자가 급속히 확산되고 있음을 지적했습니다.</p>
+<p>이러한 움직임의 배경에는 사모시장이 공모시장보다 상대적으로 AI 도입이 느렸기 때문에, 역설적으로 더 큰 기회가 존재한다는 판단이 있습니다. 데이터의 투명성, 유동성, 수수료의 불합리성 등의 문제들이 오히려 AI 도입을 더욱 필요하게 만들고 있다는 것입니다.</p>
+<h3 class="atx" id="5-10년-후의-전망">5-10년 후의 전망</h3>
+<p>정 교수는 향후 5-10년 내에 사모시장에서도 AI를 통한 혁신이 급속히 진행될 것으로 전망했습니다. 현재의 문제점들이 AI 도입의 동력이 될 것이며, 이는 전체 금융업계에 큰 변화를 가져올 것이라고 예측했습니다.</p>
+<h2 class="atx" id="4-증권업계의-ai-실무-적용-사례-진정혁-이사-미래에셋증권">4. 증권업계의 AI 실무 적용 사례 (진정혁 이사, 미래에셋증권)</h2>
+<h3 class="atx" id="금융투자업과-ai의-밀접한-관계">금융투자업과 AI의 밀접한 관계</h3>
+<p>미래에셋증권의 진정혁 이사는 금융투자업이 다른 산업군보다 특히 비정형 데이터 처리 업무가 많은 분야라고 지적했습니다. 시장 분석, 예측, 상품 개발, 트레이딩, 딜 추진, 성과 평가 등 대부분의 업무가 정형화되지 않은 정보를 다루는 특성을 가지고 있습니다.</p>
+<h3 class="atx" id="업무-방식의-혁신">업무 방식의 혁신</h3>
+<p>과거에는 회사 내 정보를 찾는 것 자체가 매우 어려웠고, 대부분 선배들로부터 배운 관행적인 방법을 따르는 경우가 많았습니다. 하지만 LLM의 도입으로 이러한 문제가 상당 부분 해결되고 있습니다.</p>
+<p>예를 들어, 새로운 상품을 개발할 때 관련 규정이나 베스트 프랙티스를 찾는 것이 과거에는 매우 어려웠지만, 현재는 RAG(Retrieval-Augmented Generation) 기술을 통해 연관된 모든 규정과 법령을 정확하게 제공할 수 있게 되었습니다.</p>
+<p><strong>개념박스: RAG (Retrieval-Augmented Generation)</strong></p>
+<blockquote>
+<p>검색 기능이 강화된 생성형 AI 기술입니다. 단순히 학습된 데이터만을 바탕으로 답변하는 것이 아니라, 실시간으로 관련 문서를 검색하여 그 정보를 바탕으로 더 정확하고 최신의 답변을 생성하는 기술입니다.</p>
+</blockquote>
+<h3 class="atx" id="뉴스-분석의-혁신">뉴스 분석의 혁신</h3>
+<p>김 이사는 증권업계에서 뉴스 분석의 중요성을 강조했습니다. 매일 8,000-9,000건의 뉴스가 생성되는데, 이를 모두 분석하는 것은 인간으로서는 불가능한 일입니다. LLM을 활용하면 이러한 방대한 뉴스를 자동으로 큐레이션하고, 더 나아가 특정 뉴스가 어떤 기업이나 섹터에 미칠 영향까지도 예측할 수 있습니다.</p>
+<h3 class="atx" id="ocr-기술의-혁신적-발전">OCR 기술의 혁신적 발전</h3>
+<p>문서 처리 분야에서도 큰 변화가 일어나고 있습니다. 과거의 OCR기술(Optical Character Recognition, 광학 문자 인식 기술)은 문서의 위치나 형식을 미리 학습시켜야 했지만, 현재는 일반적인 문서나 서류들을 프롬프트 튜닝만으로도 정확하게 처리할 수 있습니다.</p>
+<p>특히 파생상품 계약서처럼 복잡한 문서의 경우, 만기일이 단순한 날짜가 아니라 여러 조건이 복합적으로 작용하는 경우가 많습니다. 예를 들어 "A 조건이 충족되고 B 상품이 C 수준에 도달했을 때 그날을 만기일로 한다"와 같은 복잡한 조건도 LLM이 자동으로 계산하여 정확한 만기일을 산출할 수 있게 되었습니다.</p>
+<h3 class="atx" id="ai-거버넌스의-중요성">AI 거버넌스의 중요성</h3>
+<p>김 이사는 AI 거버넌스가 기존의 IT 거버넌스와는 근본적으로 다르다고 강조했습니다. IT 거버넌스가 ROI를 높이고 안정성을 확보하는 것이 목적이라면, AI 거버넌스는 AI가 활동하기 위해 반드시 필요한 체계이며, 사용자와 공급자 간의 공감대를 형성하는 것이 핵심입니다.</p>
+<p><strong>개념박스: AI 거버넌스 vs IT 거버넌스</strong></p>
+<blockquote>
+<ul>
+<li><strong>IT 거버넌스</strong>: 정해진 로직에 따라 일관된 결과를 보장하는 시스템 관리</li>
+<li><strong>AI 거버넌스</strong>: 불확실성을 내포한 AI 시스템의 특성을 이해하고, 적절한 신뢰 수준을 유지하면서 활용하는 관리 체계</li>
+</ul>
+</blockquote>
+<h3 class="atx" id="테스트와-모니터링의-새로운-패러다임">테스트와 모니터링의 새로운 패러다임</h3>
+<p>기존 IT 시스템은 정형화된 입력에 대해 예측 가능한 출력을 제공했기 때문에 테스트가 상대적으로 간단했습니다. 하지만 AI 시스템은 입력이 자유롭고 출력이 확률적이기 때문에 전혀 다른 테스트 방법론이 필요합니다.</p>
+<p>김 이사는 이를 해결하기 위해 LLM을 활용한 테스트 자동화 시스템을 검토하고 있다고 밝혔습니다. 즉, AI를 테스트하기 위해 다른 AI를 활용하는 메타 AI 접근법을 고려하고 있는 것입니다.</p>
+<h2 class="atx" id="5-아시아태평양-지역의-ai-규제-동향-리시-카푸르-이사-asifma">5. 아시아태평양 지역의 AI 규제 동향 (리시 카푸르 이사, ASIFMA)</h2>
+<h3 class="atx" id="지역별-규제-접근법의-차이">지역별 규제 접근법의 차이</h3>
+<p>싱가포르에서 온 아시프마(ASIFMA)의 리시 카푸르 이사는 아시아태평양 지역 160개 회원사를 대표하여 지역별 AI 규제 동향을 소개했습니다. 그에 따르면, 아시아태평양 지역의 AI 규제는 아직 초기 단계에 있으며, 지역별로 서로 다른 접근법을 취하고 있습니다.</p>
+<p>싱가포르와 홍콩 같은 선진 금융 허브들은 원칙 기반(Principles-based) 규제 접근법을 채택하고 있으며, 구체적인 법안보다는 프레임워크를 우선시하고 있습니다. 반면 한국은 세계에서 두 번째로 포괄적인 AI 법안을 도입한 국가라는 점에서 주목받고 있습니다.</p>
+<h3 class="atx" id="공통-규제-원칙들">공통 규제 원칙들</h3>
+<p>지역별 차이에도 불구하고, 아시아태평양 지역의 규제당국들이 공통으로 강조하는 원칙들이 있습니다:</p>
+<p><strong>최종 책임의 원칙</strong>: AI 시스템을 내부에서 개발하든 외부에서 도입하든, 최종 책임은 항상 금융기관이 져야 한다는 원칙입니다. 이는 제3자 위험 관리와 아웃소싱 관리가 매우 중요해진다는 것을 의미합니다.</p>
+<p><strong>공정성과 윤리</strong>: AI 시스템이 공정하고 윤리적으로 작동해야 한다는 원칙입니다.</p>
+<p><strong>설명가능성</strong>: AI의 의사결정 과정을 설명할 수 있어야 한다는 요구사항입니다.</p>
+<p><strong>인간의 개입</strong>: AI 시스템에 항상 인간의 감독과 개입이 필요하다는 원칙입니다.</p>
+<h3 class="atx" id="내부-vs-고객-대면-ai의-차이">내부 vs 고객 대면 AI의 차이</h3>
+<p>카푸르 이사는 회원사들이 일반적으로 내부 프로세스용 AI 솔루션에 대해서는 상당히 편안함을 느끼고 있다고 전했습니다. 연구 종합, 감정 분석, 직원 경험 개선, 정보 접근 향상, 코드 작성, AML/KYC 강화, 규제 보고 자동화 등의 영역에서는 적극적으로 AI를 도입하고 있습니다.</p>
+<p>반면 고객 대면 AI 솔루션에 대해서는 여전히 신중한 접근을 취하고 있으며, 특히 법적, 규제적, 컴플라이언스 리스크에 대한 우려가 높습니다.</p>
+<h3 class="atx" id="데이터-센터의-중요성">데이터 센터의 중요성</h3>
+<p>카푸르 이사는 모든 형태의 AI가 대량의 데이터에 의존한다는 점에서 데이터 센터의 중요성을 강조했습니다. 최근 한 CEO가 향후 몇 년간 데이터 센터에 수조 달러를 투자할 것이라고 발표한 것처럼, 데이터 센터는 AI 생태계의 핵심 인프라가 되고 있습니다.</p>
+<h2 class="atx" id="6-금융-ai의-핵심-과제와-미래-방향">6. 금융 AI의 핵심 과제와 미래 방향</h2>
+<h3 class="atx" id="융합형-인재-양성의-시급성">융합형 인재 양성의 시급성</h3>
+<p>모든 발표자들이 공통으로 강조한 것은 융합형 인재의 중요성입니다. 단순히 개발자를 많이 고용하는 것만으로는 성공적인 AI 도입이 불가능하며, 도메인 지식과 기술 역량을 모두 갖춘 전문가가 필요합니다.</p>
+<p>김홍곤 전무의 표현처럼 "PER이 1.5라는 것이 무엇을 의미하는지 모르는 개발자"와 "코딩을 이해하지 못하는 펀드매니저" 사이의 간극을 메울 수 있는 인재가 절실합니다.</p>
+<h3 class="atx" id="설명가능한-ai-xai의-필요성">설명가능한 AI (XAI)의 필요성</h3>
+<p>금융업계에서 AI의 블랙박스 특성은 큰 걸림돌이 되고 있습니다. 특히 규제가 엄격한 금융업계에서는 AI의 의사결정 과정을 설명할 수 있어야 하며, 이는 단순한 기술적 요구사항을 넘어 신뢰와 직결되는 문제입니다.</p>
+<p><strong>개념박스: 설명가능한 AI (XAI, Explainable AI)</strong></p>
+<blockquote>
+<p>AI 시스템의 의사결정 과정을 인간이 이해할 수 있도록 설명하는 기술입니다. "왜 이런 결정을 내렸는지", "어떤 요소가 가장 큰 영향을 미쳤는지" 등을 명확하게 제시할 수 있어야 합니다. 금융업계에서는 고객에게 투자 권유 이유를 설명해야 하고, 규제당국에게도 의사결정 근거를 제시해야 하므로 특히 중요합니다.</p>
+</blockquote>
+<h3 class="atx" id="규제-환경의-개선-필요성">규제 환경의 개선 필요성</h3>
+<p>김홍곤 전무가 지적한 것처럼, 금융업계의 엄격한 보안 규제가 AI 도입의 장벽이 되고 있습니다. 망분리, 클라우드 제한 등의 규제가 AI 혁신을 저해하고 있어, 정부와 업계가 함께 이러한 규제의 합리적 개선 방안을 모색해야 합니다.</p>
+<h3 class="atx" id="에이전트-ai의-발전-방향">에이전트 AI의 발전 방향</h3>
+<p>단순한 챗봇을 넘어서 실제 업무를 수행할 수 있는 에이전트 AI의 발전이 가속화되고 있습니다. 멀티 에이전트 시스템을 통해 각각의 전문 영역에서 특화된 AI가 협업하는 형태로 진화하고 있으며, 이는 금융업계의 업무 효율성을 획기적으로 개선할 것으로 기대됩니다.</p>
+<h2 class="atx" id="결론-금융-ai의-미래를-위한-제언">결론: 금융 AI의 미래를 위한 제언</h2>
+<p>이번 전문가 토론회를 통해 확인할 수 있었던 것은 금융 AI가 이미 현실이 되었다는 사실입니다. 더 이상 "도입할 것인가"의 문제가 아니라 "어떻게 효과적으로 활용할 것인가"의 문제가 되었습니다.</p>
+<p>성공적인 금융 AI 도입을 위해서는 다음과 같은 요소들이 필요합니다:</p>
+<p><strong>기술과 비즈니스의 융합</strong>: 단순한 기술 도입을 넘어서 비즈니스 전략과 밀접하게 연결된 AI 활용이 필요합니다.</p>
+<p><strong>지속적인 모니터링과 관리</strong>: AI 모델의 특성은 계속 변화하므로, 이를 지속적으로 모니터링하고 관리할 수 있는 체계가 필요합니다.</p>
+<p><strong>적절한 거버넌스 구축</strong>: AI의 특성을 이해한 새로운 형태의 거버넌스 체계가 필요하며, 이는 신뢰 구축의 기반이 됩니다.</p>
+<p><strong>규제와 혁신의 균형</strong>: 금융업계의 안정성을 유지하면서도 AI 혁신을 가능하게 하는 규제 환경의 조성이 필요합니다.</p>
+<p><strong>인재 양성</strong>: 도메인 지식과 기술 역량을 모두 갖춘 융합형 인재의 양성이 가장 시급한 과제입니다.</p>
+<p>금융 AI는 이제 선택사항이 아닌 필수가 되었습니다. 중요한 것은 이러한 변화에 능동적으로 대응하면서도, AI의 한계와 위험을 정확히 인식하고 관리하는 것입니다. 이번 토론회에서 제시된 통찰들이 한국 금융업계의 AI 혁신에 중요한 이정표가 되기를 기대합니다.</p>
+</article>
+</body>
+</html>
