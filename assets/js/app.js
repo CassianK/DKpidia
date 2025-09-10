@@ -1,11 +1,33 @@
 const state = { items: [], idx: null, tagset: new Set(), activeTags: new Set() };
 
 async function load() {
-  const res = await fetch('data/index.json');
-  state.items = (await res.json()).sort((a,b) => (b.date || '').localeCompare(a.date || ''));
-  state.items.forEach(it => (it.tags||[]).forEach(t => state.tagset.add(t)));
-  renderTags(); renderCards(state.items); buildIndex();
-  wireSearch();
+  try {
+    const res = await fetch('data/index.json');
+    if (!res.ok) throw new Error('index.json not found');
+
+    state.items = (await res.json())
+      .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+
+    state.items.forEach(it =>
+      (it.tags || []).forEach(t => state.tagset.add(t))
+    );
+
+    renderTags();
+    renderCards(state.items);
+
+    if (window.lunr) {
+      buildIndex();
+    } else {
+      console.warn("⚠️ lunr.js가 로드되지 않았습니다. 검색 기능은 비활성화됩니다.");
+    }
+
+    wireSearch();
+
+  } catch (e) {
+    console.error("❌ 데이터 로딩 실패:", e);
+    document.getElementById('cards').innerHTML =
+      '<p class="meta">인덱스를 불러오지 못했습니다. <code>data/index.json</code> 경로와 문법을 확인하세요.</p>';
+  }
 }
 function renderTags() {
   const el = document.getElementById('tags'); el.innerHTML = '';
