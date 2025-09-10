@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="../../assets/css/style.css"/>
+  <!-- JSON-LD 메타: 카테고리/태그/요약/날짜 -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"{{TITLE}}",
+    "about":["{{CATEGORY}}"],
+    "keywords":["{{TAGS}}"],
+    "datePublished":"{{DATE}}",
+    "author":[{"@type":"Person","name":"DK"}],
+    "inLanguage":"ko"
+  }
+  </script>
+</head>
+<body>
+<main class="container">
+  <a href="../../index.html">← DKpidia</a>
+  <h1>{{TITLE}}</h1>
+  <div class="meta">{{CATEGORY}} · {{DATE}} · DK · {{TAGS}}</div>
+
+  <div class="card">
+    <strong>요약:</strong>
+    <ul>
+      <li>한 줄 핵심 1</li>
+      <li>한 줄 핵심 2</li>
+      <li>한 줄 핵심 3</li>
+    </ul>
+  </div>
+
+  <h2>본문</h2>
+  <p>여기에 본문을 작성합니다…</p>
+
+  <h2>더 읽기</h2>
+  <ul>
+    <li><a href="#">관련 링크 1</a></li>
+    <li><a href="#">관련 링크 2</a></li>
+  </ul>
+
+  <p>태그: <em>#Tag1 #Tag2 #Tag3</em></p>
+</main>
+</body>
+</html>
