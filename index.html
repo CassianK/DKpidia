@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>DKpidia</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+<header class="container">
+  <h1>DKpidia</h1>
+  <nav>
+    <a href="topics/ai/">AI</a>
+    <a href="topics/crypto/">Crypto</a>
+    <a href="topics/law-tech/">Law & Tech</a>
+    <a href="topics/markets/">Markets</a>
+    <a href="about.html">About</a>
+  </nav>
+  <input id="search" type="search" placeholder="검색어 또는 #태그 입력 (예: #Sharpe, OCR, tokenization)"/>
+  <div id="tags"></div>
+</header>
+
+<main class="container">
+  <section>
+    <h2>Latest</h2>
+    <div id="cards" class="grid"></div>
+  </section>
+</main>
+
+<script src="assets/js/lunr.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
