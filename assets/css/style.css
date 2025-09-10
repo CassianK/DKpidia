@@ -1,28 +1,124 @@
-:root { --fg:#0f172a; --bg:#fff; --muted:#64748b; --card:#f8fafc; }
-*{box-sizing:border-box} body{margin:0;font-family:system-ui,apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
-.container{max-width:1000px;margin:0 auto;padding:16px}
-header h1{margin:8px 0 4px}
-nav a{margin-right:12px;text-decoration:none;color:#2563eb}
-#search{width:100%;padding:10px 12px;margin:12px 0;border:1px solid #e2e8f0;border-radius:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-.card{background:var(--card);padding:14px;border-radius:12px;border:1px solid #e2e8f0}
-.card h3{margin:0 0 6px;font-size:18px}
-.meta{font-size:12px;color:var(--muted);margin-bottom:8px}
-.tag{display:inline-block;padding:2px 8px;margin:2px;border:1px solid #e2e8f0;border-radius:999px;font-size:12px;color:#0ea5e9;cursor:pointer}
-.tag.active{background:#e0f2fe}
-/* 페이지 배경 이미지 */
+:root {
+  --fg: #0f172a;
+  --bg: #fff;
+  --muted: #64748b;
+  --card: #f8fafc;
+}
+
+/* 기본 리셋 & 타이포 */
+* { box-sizing: border-box; }
 body {
-  /* 어두운 그라디언트 + 배경 이미지 */
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px;
+}
+header h1 { margin: 8px 0 4px; }
+nav a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+/* 검색창 */
+#search {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 12px 0;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+/* 카드 그리드 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+.card {
+  background: var(--card);
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+.card h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+/* 태그 */
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 2px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #0ea5e9;
+  cursor: pointer;
+}
+.tag.active {
+  background: #e0f2fe;
+}
+
+/* ===================== */
+/* 카테고리별 배경 스타일 */
+/* ===================== */
+
+/* AI: 데이터 웨이브 */
+body.ai {
   background:
     linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35)),
     url('../img/data-wave.jpg') no-repeat center center fixed;
   background-size: cover;
+  color: #111;
+}
+body.ai .card {
+  background: rgba(248, 250, 252, 0.92);
+  color: #0f172a;
 }
 
-/* 본문 가독성(카드/텍스트 대비 높이기) */
-.container {
-  backdrop-filter: saturate(1.1);
+/* Crypto: 블루 그라디언트 */
+body.crypto {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
 }
-.card {
-  background: rgba(248,250,252,.92); /* 기존 var(--card) 느낌 유지 */
+body.crypto .card {
+  background: rgba(15, 23, 42, 0.8);
+  color: #f8fafc;
+}
+
+/* Law & Tech: 종이 질감 */
+body.law-tech {
+  background:
+    url('../img/paper-texture.png') repeat;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+body.law-tech .card {
+  background: rgba(255,255,255,0.9);
+  color: #111;
+}
+
+/* Markets: 다크 차트 */
+body.markets {
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    url('../img/finance-chart.png') repeat center center;
+  background-size: contain;
+  color: #e2e8f0;
+}
+body.markets .card {
+  background: rgba(30, 41, 59, 0.85);
+  color: #f8fafc;
 }
