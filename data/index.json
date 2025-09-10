@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cnn-rnn-alpha",
+    "title": "CNN+RNN으로 알파 추출",
+    "category": "markets",
+    "tags": ["CNN","RNN","Sharpe","Backtest"],
+    "summary": "차트 패턴(CNN)+시계열(RNN) 결합으로 노이즈를 줄이고 샤프비율을 높이는 실전 프레임.",
+    "authors": ["DK"],
+    "date": "2025-09-10",
+    "lang": "ko",
+    "source": "original"
+  },
+  {
+    "id": "ocr-derivatives",
+    "title": "LLM+OCR로 파생계약 만기 자동 산출",
+    "category": "law-tech",
+    "tags": ["OCR","LLM","Derivatives","Contract"],
+    "summary": "조건부 만기 조항을 파싱·추론하여 실제 만기일을 도출하는 워크플로.",
+    "authors": ["DK"],
+    "date": "2025-09-10",
+    "lang": "ko",
+    "source": "original"
+  }
+]
