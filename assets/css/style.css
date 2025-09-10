@@ -75,17 +75,29 @@ nav a {
 /* 카테고리별 배경 스타일 */
 /* ===================== */
 
-/* AI: 데이터 웨이브 */
+/* AI 페이지: 배경은 유지 */
 body.ai {
   background:
-    linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35)),
     url('../img/data-wave.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #111;
 }
-body.ai .card {
-  background: rgba(248, 250, 252, 0.92);
-  color: #0f172a;
+
+/* 본문 전체 패널 (옵션 2) */
+body.ai .container {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: saturate(1.05) blur(3px);
+}
+
+/* 헤더 + 검색창 패널 (옵션 3) */
+body.ai header,
+body.ai #search {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-radius: 12px;
+  padding: 8px 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
 }
 
 /* Crypto: 블루 그라디언트 */
