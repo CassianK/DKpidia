@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>LLM과 금융 투자 전략</title>
+  <link rel="stylesheet" href="../../assets/css/style.css"/>
+  <!-- JSON-LD 메타 -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"LLM과 금융 투자 전략",
+    "about":["AI","Finance"],
+    "keywords":["LLM","투자전략","포트폴리오","리스크"],
+    "datePublished":"2025-09-10",
+    "author":[{"@type":"Person","name":"DK"}],
+    "inLanguage":"ko"
+  }
+  </script>
+</head>
+<body>
+<main class="container">
+  <a href="../../index.html">← DKpidia</a>
+  <h1>LLM과 금융 투자 전략</h1>
+  <div class="meta">AI · 2025-09-10 · DK · #LLM #Finance #Portfolio #Risk</div>
+
+  <div class="card">
+    <strong>요약:</strong>
+    <ul>
+      <li>LLM은 단순한 언어 처리 도구를 넘어 투자 전략 설계에 활용 가능하다.</li>
+      <li>시장 뉴스·리서치 보고서를 벡터화해 포트폴리오 선택 보조에 사용한다.</li>
+      <li>리스크 관리, 시나리오 분석, 투자자 커뮤니케이션에도 큰 잠재력을 갖는다.</li>
+    </ul>
+  </div>
+
+  <h2>1. LLM의 역할</h2>
+  <p>
+    대규모 언어모델(LLM)은 방대한 금융 데이터를 빠르게 요약·분류할 수 있습니다.
+    과거 리서치 보고서, 실적 발표, 뉴스 헤드라인을 벡터 임베딩하여
+    특정 자산이나 섹터와의 연관성을 수치화하면 포트폴리오 구성의 인사이트로 연결됩니다.
+  </p>
+
+  <h2>2. 전략 적용 사례</h2>
+  <ul>
+    <li><strong>포트폴리오 최적화:</strong> LLM이 텍스트 기반 데이터를 점수화 → 기존 퀀트 모델과 결합.</li>
+    <li><strong>리스크 관리:</strong> 잠재적 규제 리스크나 ESG 이슈를 조기 탐지.</li>
+    <li><strong>시뮬레이션:</strong> 특정 정책 변화가 주가에 미치는 시나리오를 자동 생성.</li>
+  </ul>
+
+  <h2>3. 한계와 과제</h2>
+  <p>
+    LLM은 환각(hallucination) 문제, 최신 데이터 반영 지연, 숫자 계산 취약성 등의 한계가 있습니다.
+    따라서 단독 의사결정 도구가 아니라, CNN/RNN 같은 정량 모델과
+    상호 보완적으로 쓰는 것이 바람직합니다.
+  </p>
+
+  <h2>더 읽기</h2>
+  <ul>
+    <li><a href="https://arxiv.org/abs/2406.12345">관련 논문 예시</a></li>
+    <li><a href="https://papers.ssrn.com/">SSRN 연구 자료</a></li>
+  </ul>
+
+  <p>태그: <em>#LLM #Finance #Portfolio #Risk</em></p>
+</main>
+</body>
+</html>
