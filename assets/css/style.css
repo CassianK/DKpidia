@@ -10,3 +10,19 @@ nav a{margin-right:12px;text-decoration:none;color:#2563eb}
 .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
 .tag{display:inline-block;padding:2px 8px;margin:2px;border:1px solid #e2e8f0;border-radius:999px;font-size:12px;color:#0ea5e9;cursor:pointer}
 .tag.active{background:#e0f2fe}
+/* 페이지 배경 이미지 */
+body {
+  /* 어두운 그라디언트 + 배경 이미지 */
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    url('../img/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* 본문 가독성(카드/텍스트 대비 높이기) */
+.container {
+  backdrop-filter: saturate(1.1);
+}
+.card {
+  background: rgba(248,250,252,.92); /* 기존 var(--card) 느낌 유지 */
+}
